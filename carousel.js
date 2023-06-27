@@ -12,6 +12,7 @@ let images = [
 
 let index = 0;
 let slider = document.getElementById("slider");
+let sliderNumber = document.getElementById("sliderNumber");
 
 setInterval(() => {
     if (index === images.length) {
@@ -19,4 +20,5 @@ setInterval(() => {
     }
     slider.setAttribute("src", `${images[index]}`);
     index++;
+    sliderNumber.innerText = `${index}`;
 }, 1000);
