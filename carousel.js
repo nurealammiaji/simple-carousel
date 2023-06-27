@@ -12,6 +12,7 @@ let images = [
 
 let index = 0;
 let slider = document.getElementById("slider");
+
 setInterval(() => {
     if (index === images.length) {
         index = 0;
