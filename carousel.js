@@ -9,3 +9,13 @@ let images = [
     './images/pic-8.jpg',
     './images/pic-9.jpg'
 ];
+
+let index = 0;
+let slider = document.getElementById("slider");
+setInterval(() => {
+    if (index === images.length) {
+        index = 0;
+    }
+    slider.setAttribute("src", `${images[index]}`);
+    index++;
+}, 1000);
